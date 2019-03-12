@@ -1,0 +1,271 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>Farming Company an Agriculture Category</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="w3layouts-logo">
+						<h1><a href="index.html">Farming <span>Company</span></a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="Farmerlogin.aspx" class="hvr-sweep-to-bottom">Farmer's</a></li>
+                            <li><a href="Distributorlogin.aspx" class="hvr-sweep-to-bottom">DISTRIBUTER's</a></li>
+                            <li><a href="Retailerlogin.aspx" class="hvr-sweep-to-bottom">RETAILER's</a></li>
+                            <li><a href="Customerslogin.aspx" class="hvr-sweep-to-bottom">CUSTOMERS's</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>	
+								<div class="banner_text">
+									<h3 >It is impossible to have a healthy and sound society without a proper respect for the soil.</h3>
+									<div class="w3ls-line"> </div>
+									<p>Farming Company</p>
+									<div class="w3-button">
+										<a href="#" class="btn btn-1 btn-1b">Read More</a>
+									</div>
+								</div>
+							</li>
+                            <li>	
+								<div class="banner_text">
+									<h3 >Agriculture was the first occupation of man, and as it embraces the whole earth, it is the foundation of all other industries.</h3>
+									<div class="w3ls-line"> </div>
+									<p>Farming Company</p>
+									<div class="w3-button">
+										<a href="#" class="btn btn-1 btn-1b">Read More</a>
+									</div>
+								</div>
+							</li>
+                            <li>	
+								<div class="banner_text">
+									<h3 >Farming looks mighty easy when your plow is a pencil, and you're a thousand miles from the corn field.</h3>
+									<div class="w3ls-line"> </div>
+									<p>Farming Company</p>
+									<div class="w3-button">
+										<a href="#" class="btn btn-1 btn-1b">Read More</a>
+									</div>
+								</div>
+							</li>
+							<li>	
+								<div class="banner_text">
+									<h3>Cultivators are the most valuable citizens…they are tied to their country.</h3>
+									<div class="w3ls-line"> </div>
+									<p>Farming Company</p>
+									<div class="w3-button">
+										<a href="#" class="btn btn-1 btn-1b">Read More</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+			</section>
+			<!-- flexSlider -->
+			<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+			<script defer src="js/jquery.flexslider.js"></script>
+			<script type="text/javascript">
+			    $(window).load(function () {
+			        $('.flexslider').flexslider({
+			            animation: "slide",
+			            start: function (slider) {
+			                $('body').removeClass('loading');
+			            }
+			        });
+			    });
+			</script>
+			<!-- //flexSlider -->
+		</div>
+	</div>
+             <br />
+            <br />
+            <br />
+    <div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            <br />
+            <br />
+            <br />
+            <div class="text-grid">
+		<div class="container">
+			<h4>Improve your Farming..!</h4>
+			<p>“To everything there is a season and a time to every purpose under the heaven….a time to be born & a time to die; a time to plant and a time to pluck up that which is planted.”</p>
+		</div>
+	</div>
+	<!-- //services-bottom -->
+	<!-- blog -->
+	<div class="blog">
+		<div class="container">
+			<div class="services-heading">
+				<h3>Our Blog</h3>
+				<div class="agileits-line"> </div>
+			</div>
+			<div class="agileinfo-blog-grids">
+				<div class="col-md-4 wthree-blog">
+					<div class="w3-agileits-blog">
+						<div class="w3-agileits-blog-img">
+							<a href="single.html"><img src="images/7.jpg" alt="" /></a>
+						</div>
+						<div class="w3-agileits-blog-text">
+							<a href="single.html">Manufacturing Wheat</a>
+							<p>Flour is a finely ground powder prepared from grain or other starchy plant foods and used in baking. Although flour can be made from a wide variety of plants, the vast majority is made from wheat.</p></div>
+					</div>
+				</div>
+				<div class="col-md-4 wthree-blog">
+					<div class="w3-agileits-blog">
+						<div class="w3-agileits-blog-img">
+							<a href="single.html"><img src="images/8.jpg" alt="" /></a>
+						</div>
+						<div class="w3-agileits-blog-text">
+							<a href="single.html">Manufacturing Tea</a>
+							<p>Tea plants can be categorized on the type of plant, the appearance of the dry leaves, or the color of the tea’s liquor. But what’s used is a more scientific way of categorizing all teas, which is based on the processing that the tea leaves have been put through.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 wthree-blog">
+					<div class="w3-agileits-blog">
+						<div class="w3-agileits-blog-img">
+							<a href="single.html"><img src="images/9.jpg" alt="" /></a>
+						</div>
+						<div class="w3-agileits-blog-text">
+							<a href="single.html">Manufacturing Rice</a>
+							<p>Rice is a member of the grass family (Gramineae). There are more that 10,000 species of grasses distributed among 600 genera. Grasses occur worldwide in a variety of habitats.</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //blog -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="agileinfo_footer_grids">
+				<div class="col-md-4 agileinfo_footer_grid">
+					<div class="agile-logo">
+						<h4><a href="index.html">Farming <span>Company</span></a></h4>
+					</div>
+					<p>"Agriculture is the backbone of the Indian Economy"- said Mahatma Gandhi six decades ago. Even today, the situation is still the same, with almost the entire economy being sustained by agriculture, which is the mainstay of the villages.</p>
+					<div class="agileinfo-social-grids">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>Contact Info</h3>
+					<ul class="agileinfo_footer_grid_list">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>Chennai</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">Framers@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+					</ul>
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>Navigation</h3>
+					<ul class="agileinfo_footer_grid_nav">
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="index.html">Home</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="about.html">About Us</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="gallery.html">Gallery</a></li>
+						
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3agile_footer_copy">
+				<p>&copy; 2017 Farming Company</p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+
+	    });
+	</script>
+<!-- //here ends scrolling icon -->
+            </div>
+    </form>
+</body>
+</html>
